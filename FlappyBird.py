@@ -67,11 +67,12 @@ def grav():
 	else:
 		player_collide.y = height - player_collide.height
 		speed = 0
-tubes = [Tube(i*400, i) for i in range(10)]
-
+		
 def restart():
 	if speed == 0:
 		sc.blit(button, cheak_button)
+
+tubes = [Tube(i*400, i) for i in range(10)]
 
 while True:
 	for ev in pygame.event.get():
