@@ -34,7 +34,7 @@ class Tube:
 		self.bottom_collide = self.bottom_tube.get_rect(topleft=(self.width, self.collide.y + self.collide.height + lenght))
 
 	def draw(self):
-		if self.collide.x + self.collide.width >= rendering_area.x:#rendering area cheak
+		if self.collide.x + self.collide.width >= rendering_area.x:
 			if rendering_area.colliderect(self.collide):
 				sc.blit(self.image, self.collide)
 				sc.blit(self.bottom_tube, self.bottom_collide)
